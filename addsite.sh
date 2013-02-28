@@ -36,7 +36,6 @@
 #	works. If you use it otherwise, that's only your fault.
 #
 # Usage:
-#	cd /srv
 #	sudo ./addsite.sh nameofsite.com
 # *******************************************************************
 
@@ -44,9 +43,9 @@ ROOT_UID=0	# Only users with $UID 0 have root privileges.
 E_NOTROOT=87	# Non-root exit error.
 
 # Configurable parameters
-SERVER_IP="173.255.202.140"
+SERVER_IP="0.0.0.0"
 SERVER_PORT="80"
-SERVER_ADMIN="admin@spectrumbranch.com"
+SERVER_ADMIN="admin@mywebsite.com"
 
 # Run as root only
 if [ "$UID" -ne "$ROOT_UID" ]
